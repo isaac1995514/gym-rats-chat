@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  height: 100%;
+  width: 100%;
+  background-color: #031d44;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+  height: 10%;
+  color: white;
+  border-radius: 50%;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.content {
+  height: 80%;
+  background-color: #04395e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-footer {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-footer .chat-input {
+  width: 90%;
+  height: 100%;
+}
+
+.app-footer .sumbit {
+  width: 10%;
+  height: 100%;
 }
