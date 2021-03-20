@@ -1,0 +1,25 @@
+.auth-page-container {
+  height: 100%;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    30deg,
+    rgba(2, 0, 36, 0.958420868347339) 0%,
+    rgba(15, 15, 15, 1) 29%,
+    rgba(93, 93, 93, 1) 100%
+  );
+  display: grid;
+  place-items: center;
+
+  .function-panel {
+    height: 400px;
+    background: white;
+    width: clamp(300px, 50%, 60%);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px gray;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 46px;
+  }
+}

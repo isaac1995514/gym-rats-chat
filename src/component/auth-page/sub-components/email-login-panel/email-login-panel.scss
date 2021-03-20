@@ -1,0 +1,29 @@
+@import "../../../../assets/scss/color-sheet.scss";
+@import "../../../../assets/scss/font.scss";
+
+.email-login-panel {
+  display: grid;
+  font-family: $default-font-family;
+
+  .input-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    .input-form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      .sign-in-button {
+        margin-top: 20px;
+
+        background-color: $button-dark-gray;
+      }
+    }
+  }
+}

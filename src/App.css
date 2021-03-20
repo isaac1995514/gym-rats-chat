@@ -7,34 +7,4 @@ body,
 .app-container {
   height: 100%;
   width: 100%;
-  background-color: #031d44;
-}
-
-.app-header {
-  height: 10%;
-  color: white;
-  border-radius: 50%;
-  position: relative;
-}
-
-.content {
-  height: 80%;
-  background-color: #04395e;
-  color: white;
-}
-
-.app-footer {
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.app-footer .chat-input {
-  width: 90%;
-  height: 100%;
-}
-
-.app-footer .sumbit {
-  width: 10%;
-  height: 100%;
 }

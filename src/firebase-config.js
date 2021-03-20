@@ -1,4 +1,4 @@
-export const config = {
+const config = {
   apiKey: "AIzaSyCdzApQZUQDbRbYHNaRG9kQs5CCCxQdbFQ",
   authDomain: "gym-rats-chat.firebaseapp.com",
   projectId: "gym-rats-chat",
@@ -7,3 +7,5 @@ export const config = {
   appId: "1:671595403133:web:8f04afd630f91353edde14",
   measurementId: "G-6DCQNWVVHV",
 };
+
+export default config;

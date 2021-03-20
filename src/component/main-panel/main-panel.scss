@@ -1,0 +1,16 @@
+.main-panel-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "menu content content content content";
+
+  .header {
+    grid-area: header;
+  }
+  .room-menu {
+    grid-area: menu;
+  }
+  .chat-room {
+    grid-area: content;
+  }
+}
