@@ -9,14 +9,10 @@ import {
   Button,
   TextField,
   Dialog,
-  DialogTitle as MuiDialogTitle,
   DialogContent as MuiDialogContent,
   DialogActions as MuiDialogActions,
   IconButton,
-  Typography,
-  Box,
 } from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
 
 import validateEmail from "email-validator";
 
