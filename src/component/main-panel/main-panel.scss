@@ -1,16 +1,27 @@
 .main-panel-container {
+  height: 100%;
+  width: 100%;
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 40px auto;
   grid-template-areas:
     "header header header header header"
-    "menu content content content content";
+    "menu content content content sidebar ";
 
   .header {
     grid-area: header;
+    background-color: white;
   }
   .room-menu {
     grid-area: menu;
+    background-color: grey;
   }
   .chat-room {
     grid-area: content;
+    background-color: hotpink;
+  }
+  .side-bar {
+    grid-area: sidebar;
+    background-color: yellow;
   }
 }

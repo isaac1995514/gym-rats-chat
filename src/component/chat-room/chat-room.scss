@@ -1,0 +1,13 @@
+.chat-room-wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 60px;
+
+  .input-box {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}

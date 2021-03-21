@@ -4,9 +4,17 @@ import PropTypes from "prop-types";
 /* Database */
 import firebase from "firebase/app";
 
+/* HOC */
+import { provideFirebase } from "../../containers/chat-room";
+
+/* Component */
+import { ChatRoom } from "../chat-room";
+
 import { Button } from "@material-ui/core";
 
 import "./main-panel.scss";
+
+const FirebaseChatroom = provideFirebase(ChatRoom);
 
 function MainPanel(props) {
   const auth = firebase.auth();
@@ -28,16 +36,20 @@ function MainPanel(props) {
 
   return (
     <div className="main-panel-container">
-      <Button
-        onClick={() => {
-          auth.signOut();
-        }}
-      >
-        Sign Out
-      </Button>
-      <div className="header"></div>
+      <div className="header">
+        <Button
+          onClick={() => {
+            auth.signOut();
+          }}
+        >
+          Sign Out
+        </Button>
+      </div>
       <div className="room-menu"></div>
-      <div className="chat-room"></div>
+      <div className="chat-room">
+        <FirebaseChatroom chatroomId="RgWUyIhF2kiDGQuc3aBW" />
+      </div>
+      <div className="side-bar"></div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ import {
   Dialog,
   DialogContent as MuiDialogContent,
   DialogActions as MuiDialogActions,
-  IconButton,
+  Box,
 } from "@material-ui/core";
 
 import validateEmail from "email-validator";
